@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>VocabFun - English Flashcards</title>
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-book-open"></i>
+        <span>VocabFun</span>
+      </div>
+
+      <p>Learn English Easily!</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="flashcard">
+        <!-- Card Top -->
+        <div class="card-top">
+          <span class="badge">Vocabulary</span>
+          <span id="wordNumber">1 / 5</span>
+        </div>
+
+        <!-- Vocabulary Word -->
+        <div class="word-section">
+          <h1 id="word"></h1>
+          <p>Can you guess the meaning?</p>
+
+          <button id="soundBtn" class="sound-btn">
+            <i class="fa-solid fa-volume-high"></i>
+            Listen
+          </button>
+        </div>
+
+        <!-- Hidden Meaning -->
+        <div id="meaningBox" class="meaning-box">
+          <img id="wordImage" src="./image/apple.jpg" alt="Vocabulary Image" />
+
+          <h2>Meaning</h2>
+          <p id="meaning"></p>
+        </div>
+
+        <!-- Show / Hide Meaning -->
+        <button id="meaningBtn" class="meaning-btn"></button>
+
+        <!-- Navigation -->
+        <div class="navigation">
+          <button id="prevBtn" class="nav-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+            Previous
+          </button>
+
+          <button id="nextBtn" class="nav-btn">
+            Next
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Made with <i class="fa-solid fa-heart"></i> for English Learners</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
